@@ -1,7 +1,7 @@
 <template>
 <div class="header-container">
   <header class="the-header">
-    <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
+    <TheSideNavToggle @toggle="$emit('SideNavToggle')" />
     <div class="logo">
       <nuxt-link to="/">WD BLOG</nuxt-link>
     </div>
@@ -89,6 +89,7 @@ export default {
 
 .nav-item a:hover,
 .nav-item a:active,
+/* this is a specific nuxt class.  */
 .nav-item a.nuxt-link-active {
   color: red;
 }
